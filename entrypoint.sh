@@ -44,6 +44,13 @@ cat > /etc/samba/smb.conf <<EOF
         template homedir = /home/%U
         wide links = yes
         dead time = 15
+        ea support = no
+        store dos attributes = no
+        map readonly = no
+        map hidden = no
+        map archive = no
+        map system = no
+
 
 [homes]
         read only = ${READ_ONLY}
